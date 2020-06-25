@@ -1,0 +1,10 @@
+#using try and except 
+try:
+    hour = int(input("Enter Hour: "))
+    rate = int(input("Enter Rate: "))
+    if hour <= 40:
+        print(hour * rate)
+    elif hour > 40:
+        print((hour * rate)+(hour - 40) * (rate * 0.5))
+except:
+    print("error,please enter numeric input")
